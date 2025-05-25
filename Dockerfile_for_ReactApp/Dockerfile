@@ -1,6 +1,6 @@
-FROM react:latest
-LABLE MAINTAINER
+FROM node:latest
+LABEL MAINTAINER =" surendhar <surayssam@gmail.com>"
 COPY . .
-RUN npm install 
+RUN npm install
 EXPOSE 3000
 CMD ["npm", "start"]
